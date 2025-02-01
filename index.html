@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSphere - AAA Gaming Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">Games</a>
+        <a href="#" class="nav-link">About</a>
+    </nav>
+
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="gameplay.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content">
+            <h1 class="fade-in">Welcome to GameSphere</h1>
+            <p class="fade-in">Experience Next-Level AAA Gaming</p>
+        </div>
+    </section>
+
+    <main class="game-grid">
+        <div class="game-card">
+            <img src="1222.jpg" alt="Cyberpunk 2077 Game Art">
+            <div class="card-overlay">
+                <h3>Cyberpunk 2077</h3>
+                <a href="#" class="card-button"></a>
+            </div>
+            <!-- Trailer button with data-trailer -->
+            <button class="trailer-button" data-trailer="https://www.youtube.com/embed/qIcTM8WXFjk">Watch Trailer <i class="fas fa-play"></i></button>
+        </div>
+        <div class="game-card">
+            <img src="witcher.jpg" alt="Witcher 3 Game Art">
+            <div class="card-overlay">
+                <h3>Witcher 3</h3>
+                <a href="#" class="card-button"></a>
+            </div>
+            <!-- Trailer button with data-trailer -->
+            <button class="trailer-button" data-trailer="https://www.youtube.com/embed/c0i88t0Kacs">Watch Trailer <i class="fas fa-play"></i></button>
+        </div>
+        <div class="game-card">
+            <img src="coldwar.jpg" alt="Call of Duty Cold War Game Art">
+            <div class="card-overlay">
+                <h3>Call of Duty Cold War</h3>
+                <a href="#" class="card-button"></a>
+            </div>
+            <!-- Trailer button with data-trailer -->
+            <button class="trailer-button" data-trailer="https://www.youtube.com/embed/aTS9n_m7TW0">Watch Trailer <i class="fas fa-play"></i></button>
+        </div>
+    </main>
+
+    <!-- Cyberpunk 2077 Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe allowfullscreen></iframe> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Witcher 3 Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe allowfullscreen></iframe> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Call of Duty Cold War Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe allowfullscreen></iframe> 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2023 GameSphere. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
